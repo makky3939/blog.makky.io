@@ -9,3 +9,5 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+
+permalink: /blog/:year/:month/:day/:title
