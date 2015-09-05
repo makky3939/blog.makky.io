@@ -2,11 +2,11 @@
 layout: default
 ---
 
-%div.container
-{% for post in site.posts %}
-  %div.card.card-block
-    %p.post-meta='{{ post.date | date: "%b %-d, %Y" }}'
-
-    %h2
-      %a.post-link(href='{{ post.url | prepend: site.baseurl }}')='{{ post.title }}'
-{% endfor %}
+.container
+  %div
+  {% for post in site.posts %}
+    %span='{{ post.date | date: "%Y/%m/%-d" }}'
+    %span.label.label-default="{{post.category}}"
+    %h4
+      %a(href='{{ post.url | prepend: site.baseurl }}')='{{ post.title }}'
+  {% endfor %}
