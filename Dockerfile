@@ -22,7 +22,7 @@ RUN yum install -y nodejs npm
 
 # ruby
 RUN yum install -y ruby
-RUN gem install sass
+RUN gem install bundler
 
 # clone repository
 RUN git clone https://github.com/makky3939/blog.makky.io.git
