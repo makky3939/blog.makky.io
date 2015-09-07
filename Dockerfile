@@ -2,36 +2,25 @@ FROM centos:centos7
 MAINTAINER makky <makky.4d6b.3f5@gmail.com>
 
 
-# add npm package
-RUN rpm -ivh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
-RUN rpm -ivh http://ftp.riken.jp/Linux/fedora/epel/6/x86_64/epel-release-6-8.noarch.rpm
+# install packages
+RUN yum install -y epel-release git gcc gcc-c++ g++ make libxml2 libxml2-devel
 
-# update epel-release
-RUN yum remove -y epel-release
-RUN yum install -y epel-release
+# install nodejs
+RUN yum -y install nodejs
+RUN node -v
 
-# add required packages
-RUN yum install -y git python openssl-devel gcc gcc-c++
-
-# nginx
-RUN yum install -y nginx --enablerepo=nginx
-RUN rm /usr/share/nginx/html/*
-
-# node
-RUN yum install -y nodejs npm
-
-# ruby
-RUN yum install -y ruby
+# install ruby
+RUN yum install -y ruby ruby-dev ruby-devel
 RUN gem install bundler
 
 # clone repository
 RUN git clone https://github.com/makky3939/blog.makky.io.git
 
-# build
-RUN cd blog.makky.io && bundle install && jekyll build
-RUN cp -r makky.io/dst/* /usr/share/nginx/html/
+RUN gem install json
+RUN gem install json_pure
 
-# port open
-EXPOSE 80
-
-CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
+# build app
+# RUN cd blog.makky.io && bundle update
+RUN cd blog.makky.io && bundle instal
+RUN cd blog.makky.io && jekyll build
+RUN cp -r blog.makky.io/dst/* /usr/share/nginx/html/
