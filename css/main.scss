@@ -8,9 +8,14 @@
     margin-bottom: 15px;
 }
 
+
+* {
+  // font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'MS PGothic', sans-serif;
+  font-family: "メイリオ", Meiryo, 'Hiragino Kaku Gothic Pro', 'MS PGothic', 'M+ 1P', sans-serif;
+}
+
 .post article p {
   line-height: 1.8em;
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'MS PGothic', sans-serif;
   color: #4d4d4d;
   font-size: 18px;
 }
