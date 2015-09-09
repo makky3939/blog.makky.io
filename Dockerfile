@@ -37,3 +37,8 @@ RUN git clone https://github.com/makky3939/blog.makky.io.git
 RUN source ~/.bash_profile && cd blog.makky.io && rbenv exec bundle instal
 RUN source ~/.bash_profile && cd blog.makky.io && rbenv exec jekyll build
 RUN cp -r blog.makky.io/_site/* /usr/share/nginx/html/
+
+# port open
+EXPOSE 80
+
+CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
