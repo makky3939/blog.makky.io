@@ -2,11 +2,18 @@
 layout: default
 ---
 
-.container
-  %div
-  {% for post in site.posts %}
-    %span='{{ post.date | date: "%Y/%m/%-d" }}'
-    %span.label.label-default="{{post.category}}"
-    %h4
-      %a(href='{{ post.url | prepend: site.baseurl }}')='{{ post.title }}'
-  {% endfor %}
+%header.jumbotron
+  .container.text-xs-center
+    .col-md-8.col-md-offset-2
+      .h1 blog.makky.io
+
+%section
+  .container
+    .col-md-8.col-md-offset-2.post
+      %div
+      {% for post in site.posts %}
+        %span='{{ post.date | date: "%Y/%m/%-d" }}'
+        %span.label.label-default="{{post.category}}"
+        %h4
+          %a(href='{{ post.url | prepend: site.baseurl }}')='{{ post.title }}'
+      {% endfor %}

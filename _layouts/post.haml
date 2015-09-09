@@ -2,15 +2,17 @@
 layout: default
 ---
 
-%section.col-md-8.col-md-offset-2.post
-  %header
-    %h1="{{ page.title }}"
-    .row
-      .col-xs-6.text-xs-left
-        %span.label.label-default="{{page.category}}"
-      .col-xs-6.text-xs-right
-        %p.post-meta='{{ page.date | date: "%b %-d, %Y" }}'
+%header.jumbotron
+  .container
+    .col-md-8.col-md-offset-2
+      %h1="{{ page.title }}"
+      .row
+        .col-xs-6.text-xs-left
+          %span.label.label-default="{{page.category}}"
+        .col-xs-6.text-xs-right
+          %p.post-meta='{{ page.date | date: "%b %-d, %Y" }}'
 
-  %hr
-
-  %article="{{ content }}"
+%section
+  .container
+    .col-md-8.col-md-offset-2.post
+      %article="{{ content }}"

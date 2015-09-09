@@ -2,25 +2,28 @@ FROM centos:centos7
 MAINTAINER makky <makky.4d6b.3f5@gmail.com>
 
 
-# install packages
-RUN yum install -y epel-release git gcc gcc-c++ g++ make libxml2 libxml2-devel
+# packages install
+RUN yum groupinstall "Development Tools"
+RUN yum install -y epel-release git nginx ruby-devel nodejs openssl openssl-devel readline readline-devel zlib-devel libffi-devel
 
-# install nodejs
-RUN yum -y install nodejs
-RUN node -v
+# rbenv install
+RUN git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+RUN echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+RUN echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+RUN echo 'export LC_CTYPE="en_US.UTF-8"' >> ~/.bash_profile
+RUN git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 
-# install ruby
-RUN yum install -y ruby ruby-dev ruby-devel
-RUN gem install bundler
+# ruby install
+RUN source ~/.bash_profile && rbenv install 2.2.0 && rbenv global 2.2.0 && rbenv rehash
+
+# gem install
+RUN rbenv exec gem install bundler
+RUN rbenv exec bundle config --global jobs 4
 
 # clone repository
 RUN git clone https://github.com/makky3939/blog.makky.io.git
 
-RUN gem install json
-RUN gem install json_pure
-
 # build app
-# RUN cd blog.makky.io && bundle update
-RUN cd blog.makky.io && bundle instal
-RUN cd blog.makky.io && jekyll build
-RUN cp -r blog.makky.io/dst/* /usr/share/nginx/html/
+RUN source ~/.bash_profile && cd blog.makky.io && rbenv exec bundle instal
+RUN source ~/.bash_profile && cd blog.makky.io && rbenv exec jekyll build
+RUN cp -r blog.makky.io/_site/* /usr/share/nginx/html/
