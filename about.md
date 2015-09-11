@@ -4,8 +4,40 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+## 当ブログについて
+blog.makky.ioは
+[@_Makky_](http:/example.com)
+が運営するブログです。
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+当ブログでは、筆者の興味対象である
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+- PC
+- 情報技術
+- プログラミング(HTML5, CSS3, JavaScript, Ruby, Rails, PHP, Python)
+- 写真
+
+などに関する記事を投稿します。
+
+## 記事の誤りについて
+記事中の誤字や脱字、内容の誤りについては
+
+- メール
+- Twitter
+- Issue
+- Pull Request
+
+などの方法で報告することが出来ます。
+
+## 記事のリクエストについて
+当ブログでは記事のリクエストを受け付けています。
+
+- メール
+- Twitter
+- Issue
+- Pull Request
+
+などの方法でご連絡ください。
+
+## Google Analyticsについて
+当サイトでは、Googleが提供する「Google Analytics」を使用しています。Google Analyticsは、サイトの利用状況を解析するため、「Cookie」を使用しています。収集される情報はGoogleのポリシーに基づいて管理されます。
+Google Analyticsについて、およびGoogle社のプライバシーポリシーについては以下をご覧ください。
