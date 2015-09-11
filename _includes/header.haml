@@ -1,4 +1,9 @@
 %nav.navbar.navbar-light.bg-faded
   .container
-    %a.navbar-brand(href='{{ site.baseurl }}/')
-      {{ site.title }}
+    .navbar-nav
+      %a.navbar-brand(href='{{ site.baseurl }}/')
+        {{ site.title }}
+
+    .navbar-nav.pull-right
+      %a.nav-item.nav-link(href='{{ site.baseurl }}/about/')
+        About
