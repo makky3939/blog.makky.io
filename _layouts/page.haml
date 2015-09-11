@@ -2,6 +2,12 @@
 layout: default
 ---
 
-.card.card-block
-  %h4.card-title='{{page.title}}'
-  %p.card-text='{{content}}'
+%header.jumbotron
+  .container
+    .col-md-8.col-md-offset-2
+      %h1="{{ page.title }}"
+
+%section
+  .container
+    .col-md-8.col-md-offset-2.post
+      %article="{{ content }}"
