@@ -1,14 +1,13 @@
 ---
 ---
 
-@import "syntax-highlighting";
 @import "bootstrap";
 @import "font-awesome";
+@import "syntax-highlighting";
 
 %vertical-rhythm {
     margin-bottom: 15px;
 }
-
 
 * {
   // font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'MS PGothic', sans-serif;
@@ -24,4 +23,14 @@
 table {
   @extend .table;
   @extend .table-bordered;
+}
+
+.highlight {
+  @extend .card;
+  @extend .card-block;
+  margin: 1rm 0;
+}
+
+.highlight pre {
+  margin-bottom: 0;
 }
