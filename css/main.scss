@@ -20,6 +20,10 @@
   font-size: 18px;
 }
 
+.post article h2 {
+  margin-top: 48px;
+}
+
 table {
   @extend .table;
   @extend .table-bordered;
