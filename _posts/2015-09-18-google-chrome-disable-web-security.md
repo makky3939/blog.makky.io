@@ -34,6 +34,6 @@ open -a Google\ Chrome\ Canary --args --disable-web-security
 
 ![Picture description](/images/2015/09/chrome.png){: .img-thumbnail}
 
-ご利用は計画的に。なぜこの機能がデフォルトで無効になっているかよく考えた上でご利用ください。
+ご利用は計画的に。なぜこの機能が存在するのかよく考えた上でご利用ください。
 
 [同一生成元ポリシー - JavaScript \| MDN](https://developer.mozilla.org/ja/docs/Web/JavaScript/Same_origin_policy_for_JavaScript){:target="_blank"}
