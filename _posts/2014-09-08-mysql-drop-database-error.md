@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Mysqlでdrop databaseする時のエラー"
+title:  "MySQLでdrop databaseする時のエラー"
 date:   2014-09-08 17:21:51
 category: mysql
 ---
 
 ## 問題
 
-Mysqlでdrop databaseする時に、こんな感じでエラーが出てしまう場合
+MySQLでdrop databaseする時に、こんな感じでエラーが出てしまう場合
 
 {% highlight bash %}
 mysql > drop database [db]名
