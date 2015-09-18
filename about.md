@@ -41,3 +41,6 @@ blog.makky.ioは
 ## Google Analyticsについて
 当サイトでは、Googleが提供する「Google Analytics」を使用しています。Google Analyticsは、サイトの利用状況を解析するため、「Cookie」を使用しています。収集される情報はGoogleのポリシーに基づいて管理されます。
 Google Analyticsについて、およびGoogle社のプライバシーポリシーについては以下をご覧ください。
+
+## スタイルガイド
+[/styleguide](/styleguide){:target="_blank"}
