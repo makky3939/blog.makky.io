@@ -12,3 +12,5 @@ timezone: RE
 markdown: kramdown
 
 permalink: /articles/:year/:month/:day/:title
+
+excerpt_separator: <!--more-->
