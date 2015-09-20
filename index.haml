@@ -9,11 +9,48 @@ layout: default
 
 %section
   .container
-    .col-md-8.col-md-offset-2.post
+    .col-md-6.col-md-offset-2
+      .h4 Latest Posts
+      %hr
+      %div
+      {% for post in site.posts limit:8 %}
+        %div
+          %p
+            %span {{ post.date | date: "%Y/%m/%-d" }}
+            %span.label.label-default {{post.category}}
+
+          %h4
+            %a(href='{{ post.url | prepend: site.baseurl }}') {{ post.title }}
+
+          %hr
+      {% endfor %}
+
+      .text-xs-center
+        %a.btn.btn-primary(href='/archive/') More posts
+
+    .col-md-2
+      .h4 Categories
+      %hr
+      %div
+      {% for category in site.categories %}
+        %span.label.label-default
+          %div {{ category.first/ }} ({{ category.last.size }})
+      {% endfor %}
+
+      %hr
+      .h4 Archive
+      {% assign counter = 0 %}
       %div
       {% for post in site.posts %}
-        %span='{{ post.date | date: "%Y/%m/%-d" }}'
-        %span.label.label-default="{{post.category}}"
-        %h4
-          %a(href='{{ post.url | prepend: site.baseurl }}')='{{ post.title }}'
+        {% assign thisyear = post.date | date: "%Y %m" %}
+        {% assign prevyear = post.previous.date | date: "%Y %m" %}
+        {% assign counter = counter | plus: 1 %}
+        %div
+        {% if thisyear != prevyear %}
+          %li {{ thisyear }} ({{ counter }})
+          -# %a(href="/archive/#{{ post.date | date:"%Y %m" }}") {{ thisyear }} ({{ counter }})
+          {% assign counter = 0 %}
+        {% endif %}
       {% endfor %}
+
+      %hr

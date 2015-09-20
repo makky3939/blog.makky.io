@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Styleguide
-permalink: /Styleguide/
+permalink: /styleguide/
 ---
 
 # Headings
