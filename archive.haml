@@ -1,0 +1,21 @@
+---
+layout: page
+title: Archive
+permalink: /archive/
+---
+
+%section
+  .container
+    .col-md-8.col-md-offset-2
+      %div
+      {% for post in site.posts %}
+        %div
+          %p
+            %span {{ post.date | date: "%Y/%m/%-d" }}
+            %span.label.label-default {{post.category}}
+
+          %h4
+            %a(href='{{ post.url | prepend: site.baseurl }}') {{ post.title }}
+
+          %hr
+      {% endfor %}
