@@ -25,10 +25,14 @@ layout: default
         %ul.pager
           {% if page.next %}
           %li.pager-prev
-            %a(href='{{page.next.url}}') {{page.next.title}}
+            %a(href='{{page.next.url}}')
+              %i.fa.fa-angle-left
+              {{page.next.title}}
           {% endif %}
 
           {% if page.previous %}
           %li.pager-next
-            %a(href='{{page.previous.url}}') {{page.previous.title}}
+            %a(href='{{page.previous.url}}')
+              {{page.previous.title}}
+              %i.fa.fa-angle-right
           {% endif %}
