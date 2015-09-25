@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  年賀状
+title:  年賀状+一年を振り返るアレ
 date:   2014-01-01 08:59:27
 category: diary
 ---

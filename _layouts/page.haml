@@ -4,10 +4,7 @@ layout: default
 
 %header.jumbotron
   .container
-    .col-md-8.col-md-offset-2
-      %h1="{{ page.title }}"
+    %h1="{{ page.title }}"
 
-%section
-  .container
-    .col-md-8.col-md-offset-2.post
-      %article="{{ content }}"
+%section.container
+  {{ content }}
