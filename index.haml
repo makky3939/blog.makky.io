@@ -22,14 +22,16 @@ layout: default
             %i.fa.fa-tag
             {{post.category}}
 
-        %h4
+        %p
           %a(href='{{ post.url | prepend: site.baseurl }}') {{ post.title }}
 
     {% endfor %}
 
     .text-xs-center
       %hr
-      %a.btn.btn-primary(href='/archive/') More posts
+      %a.btn.btn-primary(href='/archive/')
+        %i.fa.fa-list.fa-fw
+        More posts
 
   .col-md-2
     .h4 Categories
