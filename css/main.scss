@@ -1,11 +1,15 @@
 ---
 ---
 
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+
 @import "bootstrap";
 @import "font-awesome";
 @import "syntax-highlighting";
 
 @import 'article';
+@import 'jumbotron';
+@import 'navbar';
 
 %vertical-rhythm {
     margin-bottom: 15px;
