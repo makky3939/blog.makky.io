@@ -4,18 +4,30 @@ title: Archive
 permalink: /archive/
 ---
 
-%section
-  .container
-    .col-md-8.col-md-offset-2
-      %div
-      {% for post in site.posts %}
-        %div
-          %p
-            %span {{ post.date | date: "%Y/%m/%-d" }}
-            %span.label.label-default {{post.category}}
+{% assign counter = 0 %}
+%div
+{% for post in site.posts %}
+  {% assign thisyear = post.date | date: "%Y %m" %}
+  {% assign prevyear = post.previous.date | date: "%Y %m" %}
 
-          %h4
-            %a(href='{{ post.url | prepend: site.baseurl }}') {{ post.title }}
+  {% assign counter = counter | plus: 1 %}
 
-          %hr
-      {% endfor %}
+  %div
+  {% if thisyear != prevyear %}
+    %h2(id='{{ post.date | date: "%Y-%m" }}') {{ thisyear }}
+    {% assign counter = 0 %}
+  {% endif %}
+
+  %article.article__short
+    .article__short__status
+      %span.article__short__status__item
+        %i.fa.fa-clock-o
+        {{ post.date | date: "%Y/%m/%-d" }}
+      %span.article__short__status__item
+        %i.fa.fa-tag
+        {{post.category}}
+
+    %p
+      %a(href='{{ post.url | prepend: site.baseurl }}') {{ post.title }}
+
+{% endfor %}
