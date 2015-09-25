@@ -26,7 +26,7 @@ layout: default
           {% if page.next %}
           %li.pager-prev
             %a(href='{{page.next.url}}')
-              %i.fa.fa-angle-left
+              %i.fa.fa-angle-left.fa-fw
               {{page.next.title}}
           {% endif %}
 
@@ -34,5 +34,5 @@ layout: default
           %li.pager-next
             %a(href='{{page.previous.url}}')
               {{page.previous.title}}
-              %i.fa.fa-angle-right
+              %i.fa.fa-angle-right.fa-fw
           {% endif %}
