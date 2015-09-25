@@ -8,11 +8,31 @@ layout: default
       %h1="{{ page.title }}"
       .row
         .col-xs-6.text-xs-left
-          %span.label.label-default="{{page.category}}"
+          %i.fa.fa-tag
+          {{page.category}}
         .col-xs-6.text-xs-right
-          %p.post-meta='{{ page.date | date: "%b %-d, %Y" }}'
+          %i.fa.fa-clock-o
+          {{ page.date | date: "%b %-d, %Y" }}
 
 %section
   .container
     .col-md-8.col-md-offset-2.post
       %article="{{ content }}"
+
+    .col-md-8.col-md-offset-2
+      %hr
+      %nav
+        %ul.pager
+          {% if page.next %}
+          %li.pager-prev
+            %a(href='{{page.next.url}}')
+              %i.fa.fa-angle-left.fa-fw
+              {{page.next.title}}
+          {% endif %}
+
+          {% if page.previous %}
+          %li.pager-next
+            %a(href='{{page.previous.url}}')
+              {{page.previous.title}}
+              %i.fa.fa-angle-right.fa-fw
+          {% endif %}
