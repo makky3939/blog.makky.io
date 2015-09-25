@@ -18,3 +18,17 @@ layout: default
   .container
     .col-md-8.col-md-offset-2.post
       %article="{{ content }}"
+
+    .col-md-8.col-md-offset-2
+      %hr
+      %nav
+        %ul.pager
+          {% if page.next %}
+          %li.pager-prev
+            %a(href='{{page.next.url}}') {{page.next.title}}
+          {% endif %}
+
+          {% if page.previous %}
+          %li.pager-next
+            %a(href='{{page.previous.url}}') {{page.previous.title}}
+          {% endif %}
