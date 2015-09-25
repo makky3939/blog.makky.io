@@ -4,9 +4,11 @@
     {% haml head.haml %}
 
   %body
-    {% haml header.haml %}
+    %nav
+      {% haml header.haml %}
 
-    %div
+    %article
       {{ content }}
 
-    {% haml footer.haml %}
+    %footer
+      {% haml footer.haml %}
