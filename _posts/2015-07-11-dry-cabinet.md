@@ -10,9 +10,9 @@ category: photo
 
 これまでカメラやレンズはドライボックスに収納していたのですが、開けるたびに乾燥剤を交換しないと湿度が下がらなくなってしまうため防湿庫を試してみることにしました。
 
-![Picture description](/images/2015-07-11/IMG_2169.jpg){: .img-thumbnail}
+![Picture description](/images/2015/07/IMG_2169.jpg){: .img-thumbnail}
 
-![Picture description](/images/2015-07-11/IMG_2171.jpg){: .img-thumbnail}
+![Picture description](/images/2015/07/IMG_2171.jpg){: .img-thumbnail}
 
 室内の湿度が70%程度の時、庫内の湿度は約50%前後になるようです。
 
