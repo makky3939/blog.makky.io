@@ -41,6 +41,7 @@ GEM
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.3.0)
       sass (~> 3.2)
+    jekyll-sitemap (0.9.0)
     jekyll-watch (1.2.1)
       listen (~> 2.7)
     kramdown (1.8.0)
@@ -82,6 +83,7 @@ DEPENDENCIES
   celluloid (= 0.16.0)
   jekyll
   jekyll-haml
+  jekyll-sitemap
   therubyracer
 
 BUNDLED WITH
