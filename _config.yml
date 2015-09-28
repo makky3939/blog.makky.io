@@ -1,7 +1,7 @@
 # Site settings
 title: blog.makky.io
 email: makky.4d6b.3f5@gmail.com
-description: blog.makky.io
+description: blog.makky.io はMakky（Masaki Kobayashi）のブログです。JavaScriptをはじめとするWebアプリケーション開発や写真、日々の出来事について書きます。
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://blog.makky.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
