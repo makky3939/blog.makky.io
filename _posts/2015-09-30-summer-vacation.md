@@ -52,3 +52,5 @@ Webフロントエンドエンジニアとして、新規サービスの開発�
 それと、7月ぐらいから、自分のサーバの各サービスをDocker化計画を進めていて、ようやく管理体制が落ち着いてきました。
 色々あってブログ(WordPress)のDBを吹き飛ばしてしまったので、Jekyllに切り替えました(記事をGitで管理できるのでｻｲｺー)。
 相変わらず http://blog.makky.io です、よろしくお願いします。
+
+<div class="row"><div class="col-md-6"><div class="card"><img src="https://lh3.googleusercontent.com/3RriYk_dgaeuzcIJUn2AzccjZiQT6ZJI_sdB_0E0-ckCkZ77DMXDjhwwmoqyrAuUlhWesIXYrMoHoFB4IiPRdOa7eFNedjc98GVHgJ4t7uZaJq1bVo6-yxygl2kMi8GMqrYlc3GibDJRDbXLSO4ar0MDr_WpdrJYo5bU8ILT7mPvHiZE9__Xvp2L0wwe9KmrIwEMIJcUZzV9EhjXGfqNDnXkL-FSBtcg9klnkVuMIUbIHHbzdPwyAVqLfJGQlpD0H7r745HmQNrCfXb_mt8cX-X2wGyf4AMcNyvbS69C8nPMXxXAK0ZTySTPRQDNn_vW78wS6QQKCf1hFUpSkPzthBiluUtWjfs6cA8lwqjdttF1ko3tWhau8rTVhjW492nnJJs1HheOnTpQ5u8K_juMs7s0WYlfVSWXJneDkUIK2fti5XU6o0Ax8hkpTQsbpwIN54z8MVmjZcT9wbDKNgjiwcpM5iy7HoDZ9i8LrchZsNwycQmpsPqcnUEIiS0dyRKw0YPNEW1gilSBJX_OVI3XggjGeLFQ60aX61BA8VHtC8rs=w2284-h1522-no" class="card-img-top" width="100%" height="auto" /><div class="card-block"><a href="https://goo.gl/photos/FShjpAaojykz4vgU7" target="_blank" class="">「2015-09」の写真</a></div></div></div></div>
