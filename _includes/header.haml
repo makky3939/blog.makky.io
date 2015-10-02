@@ -1,9 +1,4 @@
-.navbar.navbar-fixed-top.navbar-light.bg-faded.navbar-clear
+%header.jumbotron
   .container
-    .navbar-nav
-      %a.navbar-brand(href='{{ site.baseurl }}/')
-        {{ site.title }}
-
-    .navbar-nav.pull-right
-      %a.nav-item.nav-link(href='{{ site.baseurl }}/about/')
-        About
+    %h1.text-xs-center
+      %a(href='{{ site.baseurl }}/') {{ site.title }}

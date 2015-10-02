@@ -2,43 +2,70 @@
 layout: default
 ---
 
-%header.jumbotron
+%header.article-header
   .container
     .col-md-8.col-md-offset-2
-      %h1="{{ page.title }}"
       .row
+        .col-xs-6.text-xs-right
+          %i.fa.fa-clock-o
+          {{ page.date | date: "%Y/%m/%d" }}
         .col-xs-6.text-xs-left
           %i.fa.fa-tag
           {{page.category}}
-        .col-xs-6.text-xs-right
-          %i.fa.fa-clock-o
-          {{ page.date | date: "%b %-d, %Y" }}
+      .row.text-xs-center
+        %h1.article-header__title {{ page.title }}
+        .article-header__divider
 
-%section
+%section.article-body
   .container
-    .col-md-8.col-md-offset-2.post
+    .col-md-8.col-md-offset-2
       %article="{{ content }}"
+      
+%footer.article-footer
+  .container
+    .col-md-8.col-md-offset-2
       %hr
       %span
         <a href="https://twitter.com/share" class="twitter-share-button" data-via="_Makky_">Tweet</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
       %span
         <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
-    .col-md-8.col-md-offset-2
       %hr
-      %nav
-        %ul.pager
+      
+      %nav.row.article-footer__near-posts
+        .col-sm-6
           {% if page.next %}
-          %li.pager-prev
-            %a(href='{{page.next.url}}')
-              %i.fa.fa-angle-left.fa-fw
-              {{page.next.title}}
+          .card
+            .card-block
+              %a(href='{{page.next.url}}')
+                %i.fa.fa-angle-left.fa-fw
+                {{page.next.title}}
           {% endif %}
 
+        .col-sm-6
           {% if page.previous %}
-          %li.pager-next
-            %a(href='{{page.previous.url}}')
-              {{page.previous.title}}
-              %i.fa.fa-angle-right.fa-fw
+          .card
+            .card-block
+              %a(href='{{page.previous.url}}')
+                {{page.previous.title}}
+                %i.fa.fa-angle-right.fa-fw
           {% endif %}
+
+      %hr
+      %nav
+        .col-sm-6.article-footer__recent-posts   
+          .h5 Recent posts
+          %div
+          {% for post in site.posts limit:5 %}
+          %li
+            %a(href='{{ post.url | prepend: site.baseurl }}') {{ post.title }}
+          {% endfor %}
+          
+      %nav
+        .col-sm-6.article-footer__related-posts
+          .h5 Related posts
+          %div
+          {% for post in site.categories[page.category] limit:5 %}
+          %li
+            %a(href='{{ post.url | prepend: site.baseurl }}') {{ post.title }}
+          {% endfor %}
