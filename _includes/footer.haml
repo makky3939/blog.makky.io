@@ -1,12 +1,33 @@
-.col-xs-12
-  %hr
+.col-xs-12.footer
   .container
-    .col-sm-6.text-sm-left.text-xs-center
-      %p &copy; blog.makky.io
-    .col-sm-6.text-sm-right.text-xs-center
-      %a{href: 'https://twitter.com/_Makky_', target: '_brank'}
-        %i.fa.fa-twitter.fa-2x.fa-fw
-      %a{href: 'https://www.facebook.com/masaki.kobayashi.1485', target: '_brank'}
-        %i.fa.fa-facebook.fa-2x.fa-fw
-      %a{href: 'https://github.com/makky3939', target: '_brank'}
-        %i.fa.fa-github.fa-2x.fa-fw
+    .col-xs-12.footer__section
+      %a.footer__link{href: '#top'}
+        %i.fa.fa-angle-double-up.fa-fw.footer__icon
+
+    .col-xs-12.footer__section
+      %a.footer__link{href: "{{ site.account.twitter }}", target: '_brank'}
+        %i.fa.fa-twitter.fa-fw.footer__icon
+      %a.footer__link{href: "{{ site.account.github }}", target: '_brank'}
+        %i.fa.fa-github.fa-fw.footer__icon
+      %a.footer__link{href: "{{ site.account.slideshare }}", target: '_brank'}
+        %i.fa.fa-slideshare.fa-fw.footer__icon
+      %a.footer__link{href: "{{ site.account.steam }}", target: '_brank'}
+        %i.fa.fa-steam.fa-fw.footer__icon
+      %a.footer__link{href: "{{ site.account.facebook }}", target: '_brank'}
+        %i.fa.fa-facebook.fa-fw.footer__icon
+      %a.footer__link{href: "{{ site.account.google_plus }}", target: '_brank'}
+        %i.fa.fa-google-plus.fa-fw.footer__icon
+
+    .col-xs-12.footer__section
+      %ul.list-inline
+        %li
+          %a.footer__link{href: "{{ site.links.blog_makky_io }}"} Top
+        %li
+          %a.footer__link{href: "{{ site.links.about }}"} About
+        %li
+          %a.footer__link{href: "{{ site.project.repository }}", target: '_brank'} GitHub Project
+        %li
+          %a.footer__link{href: "{{ site.project.issues }}", target: '_brank'} Issues
+        %li
+          %a.footer__link{href: "{{ site.links.www_makky_io }}", target: '_brank'} www.makky.io
+      %p &copy; makky.io All Rights Reserved.
