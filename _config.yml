@@ -1,21 +1,44 @@
-# Site settings
-title: blog.makky.io
-email: makky.4d6b.3f5@gmail.com
-description: blog.makky.io はMakky（小林 正樹:Masaki Kobayashi）のブログです。JavaScriptをはじめとするWebアプリケーション開発や写真、日々の出来事について書きます。
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://blog.makky.io" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
 timezone: RE
 
-include: ['_pages']
+gems:
+  - jekyll-sitemap
 
-exclude: ['Dockerfile', 'Gemfile', 'Gemfile.lock', 'README.md']
+include:
+  - _pages
 
-# Build settings
+exclude:
+  - Dockerfile
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+title: blog.makky.io
+
+email: makky.4d6b.3f5@gmail.com
+
+description: blog.makky.io はMakky（小林 正樹:Masaki Kobayashi）のブログです。JavaScriptをはじめとするWebアプリケーション開発や写真、日々の出来事について書きます。
+
+baseurl: ''
+
+url: 'http://blog.makky.io'
+
 markdown: kramdown
 
 permalink: /articles/:year/:month/:day/:title
 
-gems:
-  - jekyll-sitemap
+account:
+  twitter: https://twitter.com/_Makky_
+  facebook: https://www.facebook.com/masaki.kobayashi.1485
+  github: https://github.com/makky3939
+  slideshare: http://www.slideshare.net/masakikobayashi1485
+  steam: http://steamcommunity.com/profiles/76561198000450118
+  google_plus: https://plus.google.com/u/0/+MasakiKobayashi_makky_/posts
+
+project:
+  repository: https://github.com/makky3939/blog.makky.io
+  issues: https://github.com/makky3939/blog.makky.io/issues
+
+links:
+  blog_makky_io: http://blog.makky.io
+  www_makky_io: http://www.makky.io
+  about: http://blog.makky.io/about
