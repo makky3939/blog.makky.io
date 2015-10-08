@@ -8,6 +8,10 @@ twitter_username: jekyllrb
 github_username:  jekyll
 timezone: RE
 
+include: ['_pages']
+
+exclude: ['Dockerfile', 'Gemfile', 'Gemfile.lock', 'README.md']
+
 # Build settings
 markdown: kramdown
 
