@@ -18,16 +18,16 @@ permalink: /archive/
     {% assign counter = 0 %}
   {% endif %}
 
-  %article.article__short
-    .article__short__status
-      %span.article__short__status__item
+  .article-item
+    %ul.list-inline.article-item__head
+      %li
         %i.fa.fa-clock-o
         {{ post.date | date: "%Y/%m/%-d" }}
-      %span.article__short__status__item
+      %li
         %i.fa.fa-tag
         {{post.category}}
 
-    %p
+    %p.article-item__body
       %a(href='{{ post.url | prepend: site.baseurl }}') {{ post.title }}
 
 {% endfor %}

@@ -5,13 +5,14 @@ layout: default
 %header.article-header
   .container
     .col-md-8.col-md-offset-2
-      .row
-        .col-xs-6.text-xs-right
-          %i.fa.fa-clock-o
-          {{ page.date | date: "%Y/%m/%d" }}
-        .col-xs-6.text-xs-left
-          %i.fa.fa-tag
-          {{page.category}}
+      .row.text-xs-center
+        %ul.list-inline
+          %li
+            %i.fa.fa-clock-o.fa-fw
+            {{ page.date | date: "%Y/%m/%d" }}
+          %li
+            %i.fa.fa-tag.fa-fw
+            {{page.category}}
       .row.text-xs-center
         %h1.article-header__title {{ page.title }}
         .article-header__divider
