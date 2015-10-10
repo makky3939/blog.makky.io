@@ -9,18 +9,16 @@ permalink: /
     %hr
     %div
     {% for post in site.posts limit:8 %}
-      .article__short
-        .article__short__status
-          %span.article__short__status__item
-            %i.fa.fa-clock-o
+      .article-item
+        %ul.list-inline.article-item__head
+          %li
+            %i.fa.fa-clock-o.fa-fw
             {{ post.date | date: "%Y/%m/%-d" }}
-          %span.article__short__status__item
-            %i.fa.fa-tag
+          %li
+            %i.fa.fa-tag.fa-fw
             {{post.category}}
-
-        %p
+        %p.article-item__body
           %a(href='{{ post.url | prepend: site.baseurl }}') {{ post.title }}
-
     {% endfor %}
 
     .text-xs-center
