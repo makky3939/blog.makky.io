@@ -37,3 +37,16 @@ table {
 .label {
   margin-right: 0.2rem;
 }
+
+table.gsc-search-box td {
+  border: none;
+}
+
+input.gsc-search-button-v2 {
+  height: 24px !important;
+  background: #fff !important;
+}
+
+.table.gsc-search-box td {
+  padding: 0;
+}
