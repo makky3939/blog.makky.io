@@ -1,0 +1,7 @@
+language: ruby
+rvm: 2.3
+
+notifications:
+  slack:
+    rooms:
+      - makky:dUw59Fbyjw09nrFlIQeZ1e0a#ci
