@@ -48,7 +48,6 @@ layout: default
           <!-- blog.makky.io-post2 --><ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-5501734840184095" data-ad-slot="8210198969"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
       %hr
-
       %nav.row.article-footer__near-posts
         .col-sm-6
           {% if page.next %}
@@ -68,7 +67,8 @@ layout: default
                 %i.fa.fa-angle-right.fa-fw
           {% endif %}
 
-      %nav
+      %hr
+      %nav.row
         .col-sm-6.article-footer__recent-posts
           .h5 Recent posts
           %hr
@@ -78,7 +78,6 @@ layout: default
             %a(href='{{ post.url | prepend: site.baseurl }}') {{ post.title }}
           {% endfor %}
 
-      %nav
         .col-sm-6.article-footer__related-posts
           .h5 Related posts
           %hr
