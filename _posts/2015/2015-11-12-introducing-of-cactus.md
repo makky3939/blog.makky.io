@@ -3,6 +3,7 @@ layout: post
 title:  "サボテンはじめました"
 date:   2015-11-12 20:00:00
 category: diary
+thumbnail: /images/2015/11/2015-11-12-19-16-37.jpg
 ---
 
 [雙峰祭](http://www.sohosai.tsukuba.ac.jp/){:target="blank"}
