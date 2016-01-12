@@ -3,6 +3,7 @@ layout: post
 title:  "Google Analyticsで最初に設定すべきフィルタリング"
 date:   2015-11-10 14:24:00
 category: web
+thumbnail: /images/2015/11/2015-11-10.png
 ---
 
 Google Analyticsをしばらく使っていると、

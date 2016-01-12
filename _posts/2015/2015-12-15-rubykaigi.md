@@ -3,6 +3,7 @@ layout: post
 title:  "Rubykaigiに行ってきた"
 date:   2015-12-15 22:18:00
 category: ruby
+thumbnail: /images/2015/12/2015-12-15 19.00.43.png
 ---
 
 この投稿は
