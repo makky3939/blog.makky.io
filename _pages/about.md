@@ -43,4 +43,4 @@ blog.makky.ioは
 Google Analyticsについて、およびGoogle社のプライバシーポリシーについては以下をご覧ください。
 
 ## スタイルガイド
-[styleguide](/styleguide/){:target="_blank"}
+[styleguide](/styleguide/)
