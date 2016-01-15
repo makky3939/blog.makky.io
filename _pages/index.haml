@@ -20,7 +20,7 @@ permalink: /
         .article-item__body
           .col-sm-2.hidden-xs-down
             .row
-            %img.img-borderd(src='{% if post.thumbnail %}{{ post.thumbnail }}?1{% else %}/assets/image/webclip.png?1{% endif %}' width='100%' height='auto')
+            %img.img-borderd(src='{% if post.thumbnail %}{{ post.thumbnail }}{% else %}/assets/image/webclip.png?1{% endif %}' width='100%' height='auto')
           .col-sm-10.col-xs-12
             .row
               %a.article-item__body__head(href='{{ post.url | prepend: site.baseurl }}') {{ post.title }}
