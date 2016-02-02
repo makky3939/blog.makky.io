@@ -38,14 +38,14 @@
 %meta{property: "og:locale", content:"ja_JP"}
 %meta{property: "fb:admins", content: "100002886134581"}
 %meta{property: "fb:app_id", content: "129245867430558"}
-%meta{property: "og:image", content: "{% if page.thumbnail %}{{ page.thumbnail }}?1{% else %}/assets/image/webclip.png?1{% endif %}"}
+%meta{property: "og:image", content: "http://blog.makky.io/{% if page.thumbnail %}{{ page.thumbnail }}?1{% else %}/assets/image/webclip.png?1{% endif %}"}
 
 
 %meta{name: 'twitter:card', content: 'summary'}
 %meta{name: 'twitter:site', content: '@_Makky_'}
 %meta{name: "twitter:title", content: "{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}"}
 %meta{name: "twitter:description", content: "{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }} | {% endif %}{{ site.description }}"}
-%meta{name: "twitter:image", content: "{% if page.thumbnail %}{{ page.thumbnail }}?1{% else %}/assets/image/webclip.png?1{% endif %}"}
+%meta{name: "twitter:image", content: "http://blog.makky.io/{% if page.thumbnail %}{{ page.thumbnail }}?1{% else %}/assets/image/webclip.png?1{% endif %}"}
 
 
 %link{rel: 'stylesheet', href: '{{ "/css/main.css" | prepend: site.baseurl }}'}
