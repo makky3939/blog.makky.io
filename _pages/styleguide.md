@@ -70,6 +70,10 @@ hoge = [1, 2, 3]
 
 {% image makky /images/2015/12/1.jpg /images/2015/12/1.jpg %}
 
+# Video
+
+<div class='video-wrapper'><iframe src="https://www.youtube.com/embed/fxF7r1xOoS0" frameborder="0" allowfullscreen></iframe></div>
+
 # Annotation
 
 [^1]
