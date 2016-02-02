@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
+gem 'jekyll', '2.5.3'
 
-gem 'jekyll-haml'
+gem 'jekyll-haml', '0.1.2'
 
 gem 'blankslate', '2.1.2.4'
 
