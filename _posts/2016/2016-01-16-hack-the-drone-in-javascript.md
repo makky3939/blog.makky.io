@@ -88,7 +88,7 @@ Rolling Spider ready
 
 ### 飛んだ
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fxF7r1xOoS0" frameborder="0" allowfullscreen></iframe>
+<div class='video-wrapper'><iframe src="https://www.youtube.com/embed/fxF7r1xOoS0" frameborder="0" allowfullscreen></iframe></div>
 
 ## まとめ
 遂にJavaScriptで空を飛ぶ物体を制御出来るようになりました。
