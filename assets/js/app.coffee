@@ -17,6 +17,6 @@
   m.parentNode.insertBefore a, m
 ) window, document, 'script', 'http://www.google-analytics.com/analytics.js',
 'ga'
-ga 'create', 'UA-47562530-1', 'makky.io'
+ga 'create', 'UA-47562530-2', 'blog.makky.io'
 ga 'require', 'displayfeatures'
 ga 'send', 'pageview'
