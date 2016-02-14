@@ -1,13 +1,61 @@
 ---
 layout: default
 ---
-<div class='row'>
-  <article class='col-md-8 col-md-offset-2 col-xs-12'>
-    <header>
-      <h1>{{page.title}}</h1>
-      <hr />
-    </header>
 
-    <section>{{content}}</section>
-  </article>
-</div>
+<article class='col-md-8 col-md-offset-2 col-xs-12'>
+  <header>
+    <h1>{{page.title}}</h1>
+    <hr />
+  </header>
+
+  <section>{{content}}</section>
+
+  <footer>
+    <hr />
+    <div class='row'>
+      <div class='col-md-6 col-xs-12'>
+        <p>Next</p>
+        {% if page.next %}
+          <a class='btn btn-primary' href='{{page.next.url}}'>{{page.next.title}}</a>
+        {% endif %}
+      </div>
+      <div class='col-md-6 col-xs-12'>
+        <p>Previous</p>
+        {% if page.previous %}
+          <a class='btn btn-primary' href='{{page.previous.url}}'>{{page.previous.title}}</a>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class='col-md-6 col-xs-12'>
+        <p>Related posts</p>
+        {% for post in site.categories[page.category] limit:5 %}
+        <li>
+          <a class='' href='{{post.url}}'>{{post.title}}</a>
+        </li>
+        {% endfor %}
+      </div>
+      <div class='col-md-6 col-xs-12'>
+        <p>Recent posts</p>
+        {% for post in site.posts limit:5 %}
+          <li>
+            <a class='' href='{{post.url}}'>{{post.title}}</a>
+          </li>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- <div class='row'>
+      <div class='col-xs-12'>
+        <p>Author</p>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class='col-xs-12'>
+        <p>Archives</p>
+      </div>
+    </div> -->
+  </footer>
+</article>
