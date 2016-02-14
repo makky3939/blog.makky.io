@@ -3,10 +3,10 @@ layout: default
 permalink: /
 ---
 
-%h1 Latest Posts
+%h1.text-xs-center Latest Posts
 
 %ul
-{% for post in site.posts limit:8 %}
+{% for post in site.posts limit: 100 %}
   %li
     %a(href="{{ post.url | prepend: site.baseurl }}")
       {{ post.title }}
