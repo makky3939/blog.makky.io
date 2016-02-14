@@ -14,31 +14,17 @@
 
 @import "color";
 @import "base";
+
+// Component
 @import "header";
 @import "footer";
 @import "article";
 
-.video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 25px;
-  height: 0;
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-}
+// UI
+@import "button";
 
 .highlight {
   @extend .card;
   @extend .card-block;
   margin: 1rm 0;
-}
-
-.btn{
-    white-space:normal !important;
-    word-wrap:break-word;
 }
