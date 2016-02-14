@@ -3,11 +3,11 @@ layout: default
 permalink: /
 ---
 
-%h1 Posts
-%div
-  %ul
-  {% for post in site.posts limit:8 %}
-    %li
-      %a(href="{{ post.url | prepend: site.baseurl }}")
-        {{ post.title }}
-  {% endfor %}
+%h1 Latest Posts
+
+%ul
+{% for post in site.posts limit:8 %}
+  %li
+    %a(href="{{ post.url | prepend: site.baseurl }}")
+      {{ post.title }}
+{% endfor %}
