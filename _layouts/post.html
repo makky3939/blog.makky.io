@@ -5,6 +5,10 @@ layout: default
 <article class='col-md-8 col-md-offset-2 col-xs-12'>
   <header>
     <h1>{{page.title}}</h1>
+    <div class='text-xs-center'>
+      <span class='label label-default'>{{ page.category }}</span>
+      <span>{{ page.date | date: '%Y/%m/%d' }}</span>
+    </div>
     <hr />
   </header>
 
@@ -12,24 +16,46 @@ layout: default
 
   <footer>
     <hr />
+
+    <div class='row'>
+      <div class='col-xs-12 text-xs-center'>
+        <div class='article-footer-share'>
+          <div id='fb-root'></div>
+          <span>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="_Makky_">Tweet</a>
+          </span>
+          <span>
+            <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+          </span>
+          <span>
+            <div class="fb-like" data-href="http://blog.makky.io" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+          </span>
+        </div>
+      </div>
+    </div>
+
     <div class='row'>
       <div class='col-md-6 col-xs-12'>
-        <p>Next</p>
+        <h2>Next post</h2>
         {% if page.next %}
-          <a class='btn btn-primary' href='{{page.next.url}}'>{{page.next.title}}</a>
+          <a class='btn btn-primary-outline btn-block' href='{{page.next.url}}'>{{page.next.title}}</a>
+        {% else %}
+          <button class='btn btn-secondary btn-block' disabled='true'>Comming soon.</a>
         {% endif %}
       </div>
       <div class='col-md-6 col-xs-12'>
-        <p>Previous</p>
+        <h2>Previous post</h2>
         {% if page.previous %}
-          <a class='btn btn-primary' href='{{page.previous.url}}'>{{page.previous.title}}</a>
+          <a class='btn btn-primary-outline btn-block' href='{{page.previous.url}}'>{{page.previous.title}}</a>
+        {% else %}
+          <button class='btn btn-secondary btn-block' disabled='true'>There is none</a>
         {% endif %}
       </div>
     </div>
 
     <div class='row'>
       <div class='col-md-6 col-xs-12'>
-        <p>Related posts</p>
+        <h2>Related posts</h2>
         {% for post in site.categories[page.category] limit:5 %}
         <li>
           <a class='' href='{{post.url}}'>{{post.title}}</a>
@@ -37,7 +63,7 @@ layout: default
         {% endfor %}
       </div>
       <div class='col-md-6 col-xs-12'>
-        <p>Recent posts</p>
+        <h2>Recent posts</h2>
         {% for post in site.posts limit:5 %}
           <li>
             <a class='' href='{{post.url}}'>{{post.title}}</a>
@@ -48,14 +74,43 @@ layout: default
 
     <!-- <div class='row'>
       <div class='col-xs-12'>
-        <p>Author</p>
+        <h2>Author</h2>
+        <div class='row'>
+          <div class='col-md-6 col-md-offset-3'>
+            <div class='card'>
+              <div class='card-block'>
+                <div class='row'>
+                  <div class='col-md-4'>
+                  </div>
+                  <div class='col-md-8'>
+                    <h3>Masaki Kobayashi</h3>
+                    <p>
+                      WebSite:
+                      <a href='http://makky.io'>makky.io</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class='row'>
+    <!-- <div class='row'>
       <div class='col-xs-12'>
         <p>Archives</p>
       </div>
     </div> -->
+    <hr />
+
+    <div class='row'>
+      <div class='col-md-6 col-xs-12 text-xs-center'>
+        <ins class="adsbygoogle" style="overflow:hidden;display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-5501734840184095" data-ad-slot="3640398567"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+      <div class='col-md-6 col-xs-12 text-xs-center'>
+        <ins class="adsbygoogle" style="overflow:hidden;display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-5501734840184095" data-ad-slot="8210198969"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+    </div>
   </footer>
 </article>

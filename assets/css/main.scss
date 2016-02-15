@@ -28,3 +28,8 @@
   @extend .card-block;
   margin: 1rm 0;
 }
+
+.fb_iframe_widget span {
+  vertical-align: top !important;
+  margin-top: -2px;
+}
