@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'rake', '10.5.0'
-
 gem 'jekyll', '3.1.1'
 
-# Jekyll plugins
-gem 'jekyll-haml'
-gem 'jekyll-sitemap'
+group :jekyll_plugins do
+  gem 'jekyll-haml'
+  gem 'jekyll-sitemap'
+end
