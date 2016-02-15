@@ -8,6 +8,6 @@ permalink: /
 %ul
 {% for post in site.posts limit: 100 %}
   %li
-    %a(href="{{ post.url | prepend: site.baseurl }}")
+    %a.btn.btn-link(href="{{ post.url | prepend: site.baseurl }}")
       {{ post.title }}
 {% endfor %}
