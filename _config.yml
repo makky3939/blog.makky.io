@@ -3,8 +3,21 @@ timezone: RE
 gems:
   - jekyll-sitemap
 
+sass:
+  style: compressed
+
 include:
   - _pages
+
+compress_html:
+  clippings: []
+  comments: []
+  endings: []
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []
 
 exclude:
   - vendor
