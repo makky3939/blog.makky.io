@@ -3,6 +3,9 @@ timezone: RE
 gems:
   - jekyll-sitemap
 
+sass:
+  style: compressed
+
 include:
   - _pages
 
