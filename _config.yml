@@ -27,7 +27,7 @@ url: 'http://blog.makky.io'
 
 markdown: kramdown
 
-permalink: /articles/:year/:month/:day/:title
+permalink: /articles/:year/:month/:day/:title/
 
 account:
   twitter: https://twitter.com/_Makky_
