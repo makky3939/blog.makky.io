@@ -6,8 +6,13 @@ permalink: /
 %h1.text-xs-center Latest Posts
 
 %ul
-{% for post in site.posts limit: 100 %}
+{% for post in site.posts limit: 16 %}
   %li
     %a.btn.btn-link(href="{{ post.url | prepend: site.baseurl }}")
       {{ post.title }}
 {% endfor %}
+
+.col-xs-12
+  %hr
+  .text-xs-center
+    %a.btn.btn-primary-outline(href="/archives/") More posts
