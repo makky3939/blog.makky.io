@@ -3,16 +3,22 @@ layout: default
 permalink: /
 ---
 
-%h1.text-xs-center Latest Posts
-
-%ul
-{% for post in site.posts limit: 16 %}
-  %li
-    %a.btn.btn-link(href="{{ post.url | prepend: site.baseurl }}")
-      {{ post.title }}
-{% endfor %}
+.jumbotron
+  %h1 blog.makky.io
+  %p makky's diary
 
 .col-xs-12
+  .card-columns
+  {% for post in site.posts limit: 16 %}
+    .card
+      %img.card-img-top(src="{% if post.thumbnail %}{{ post.thumbnail }}?20160202{% else %}/assets/image/thumbnail.png?1{% endif %}" width="100%" height="auto")
+      .card-block
+        %h5.card-title
+          %a(href="{{ post.url | prepend: site.baseurl }}")
+            {{ post.title }}
+  {% endfor %}
+
+.col-sm-8.col-sm-offset-2.col-xs-12
   %hr
   .text-xs-center
-    %a.btn.btn-primary-outline(href="/archives/") More posts
+    %a.btn.btn-primary-outline.btn-block(href="/archives/") More posts
