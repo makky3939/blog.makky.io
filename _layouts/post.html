@@ -7,15 +7,15 @@ layout: default
     <nav>
       <a href='/'>m</a>
     </nav>
-    <h1>{{page.title}}</h1>
-    <div class='text-xs-center'>
-      <span class='label label-info'>{{ page.category }}</span>
+    <h1 class='text-xs-left'>{{page.title}}</h1>
+    <div class='text-xs-left'>
+      <span class='label label-default'>{{ page.category }}</span>
       <span>{{ page.date | date: '%Y/%m/%d' }}</span>
     </div>
     <hr />
   </header>
 
-  <section>{{content}}</section>
+  <section>{{ content }}</section>
 
   <footer>
     <hr />
