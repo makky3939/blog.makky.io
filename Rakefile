@@ -5,6 +5,7 @@ end
 
 desc 'run server'
 task :develop do
+  sh 'rm .jekyll-metadata'
   sh 'bundle exec jekyll server -w --incremental'
 end
 
