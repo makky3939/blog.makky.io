@@ -3,7 +3,7 @@ layout: post
 title:  "Rubykaigiに行ってきた"
 date:   2015-12-15 22:18:00
 category: ruby
-thumbnail: /images/2015/12/2015-12-15 19.00.43.png
+thumbnail: /images/2015/12/2015-12-15.png
 ---
 
 この投稿は
@@ -23,7 +23,7 @@ Klisの皆さんはRubyをご存知ですね。プログラミング演習で勉
 
 ## Rubykaigiとは
 
-![Picture description](/images/2015/12/2015-12-15 19.00.43.png){: .img-thumbnail}
+![Picture description](/images/2015/12/2015-12-15.png){: .img-thumbnail}
 [4]
 
 Webサイトを見ても企業のロゴと🍣(寿司)が並んでいるばかりでよく分かりませんね。
