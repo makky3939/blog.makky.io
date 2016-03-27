@@ -16,9 +16,19 @@ permalink: /
         %h5.card-title
           %a(href="{{ post.url | prepend: site.baseurl }}")
             {{ post.title }}
+        %p
+          %small
+            %i.fa.fa-hashtag
+            {{ post.category }}
+          %small
+            %i.fa.fa-clock-o
+            {{ post.date | date: '%Y/%m/%d' }}
+
   {% endfor %}
 
 .col-sm-8.col-sm-offset-2.col-xs-12
   %hr
   .text-xs-center
-    %a.btn.btn-primary-outline.btn-block(href="/archives/") More posts
+    %a.btn.btn-primary-outline.btn-block(href="/archives/")
+      %i.fa.fa-th
+      More posts
