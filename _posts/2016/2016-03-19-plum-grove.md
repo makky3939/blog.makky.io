@@ -6,6 +6,8 @@ category: diary
 thumbnail: /images/2016/03/DSC4053.jpg
 ---
 
+筑波山の梅林と偕楽園の梅祭りに行ってきました
+
 {% image 筑波山梅林にて /images/2016/03/DSC3881-2.jpg %}
 
 {% image 筑波山梅林にて /images/2016/03/DSC3862-2.jpg %}
