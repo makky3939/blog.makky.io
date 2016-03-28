@@ -10,12 +10,10 @@ permalink: /
 .row
 {% for post in site.posts limit: 16 %}
   .col-md-4
-    .card
+    %a.card(href="{{ post.url | prepend: site.baseurl }}")
       .card-img-top(style="background-image:url({% if post.thumbnail %}{{ post.thumbnail }}?20160202{% else %}/assets/image/thumbnail.png?1{% endif %})")
       .card-block
-        %h5.card-title
-          -# %a(href="{{ post.url | prepend: site.baseurl }}")
-          {{ post.title }}
+        %h5.card-title {{ post.title }}
         .clearfix
           %small.pull-xs-left {{ post.category | prepend: '#'}}
           %small.pull-xs-right
