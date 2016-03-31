@@ -4,23 +4,25 @@ permalink: /
 ---
 
 .jumbotron
-  %h1 blog.makky.io
-  %p makky's diary
+  .row
+    %h1 blog.makky.io
+    %p makky's diary
 
-.row
-{% for post in site.posts limit: 16 %}
-  .col-md-4
-    %a.card(href="{{ post.url | prepend: site.baseurl }}")
-      .card-img-top(style="background-image:url({% if post.thumbnail %}{{ post.thumbnail }}?20160202{% else %}/assets/image/thumbnail.png?1{% endif %})")
-      .card-block
-        %h5.card-title {{ post.title }}
-        .clearfix
-          %small.pull-xs-left {{ post.category | prepend: '#'}}
-          %small.pull-xs-right
-            %i.fa.fa-clock-o
-            {{ post.date | date: '%Y/%m/%d' }}
+.col-xs-12
+  .row
+  {% for post in site.posts limit: 16 %}
+    .col-md-4
+      %a.card(href="{{ post.url | prepend: site.baseurl }}")
+        .card-img-top(style="background-image:url({% if post.thumbnail %}{{ post.thumbnail }}?20160202{% else %}/assets/image/thumbnail.png?1{% endif %})")
+        .card-block
+          %h5.card-title {{ post.title }}
+          .clearfix
+            %small.pull-xs-left {{ post.category | prepend: '#'}}
+            %small.pull-xs-right
+              %i.fa.fa-clock-o
+              {{ post.date | date: '%Y/%m/%d' }}
 
-{% endfor %}
+  {% endfor %}
 
 .col-sm-8.col-sm-offset-2.col-xs-12
   %hr
