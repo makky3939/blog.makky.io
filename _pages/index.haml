@@ -10,7 +10,7 @@ permalink: /
 
 .col-xs-12
   .row
-  {% for post in site.posts limit: 16 %}
+  {% for post in site.posts limit: 15 %}
     .col-md-4
       %a.card(href="{{ post.url | prepend: site.baseurl }}")
         .card-img-top(style="background-image:url({% if post.thumbnail %}{{ post.thumbnail }}?20160202{% else %}/assets/image/thumbnail.png?1{% endif %})")
@@ -25,8 +25,7 @@ permalink: /
   {% endfor %}
 
 .col-sm-8.col-sm-offset-2.col-xs-12
-  %hr
   .text-xs-center
-    %a.btn.btn-primary-outline.btn-block(href="/archives/")
+    %a.btn.btn-primary-outline.btn-block.btn-md-margin(href="/archives/")
       %i.fa.fa-th
       More posts
