@@ -5,7 +5,8 @@ permalink: /about/
 ---
 
 ## 当ブログについて
-blog.makky.ioは
+
+[blog.makky.io](http://blog.makky.io)は
 [@_Makky_](https://twitter.com/_Makky_)
 が運営するブログです。
 
