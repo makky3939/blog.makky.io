@@ -8,7 +8,7 @@ permalink: /about/
 
 [blog.makky.io](http://blog.makky.io)は
 [@_Makky_](https://twitter.com/_Makky_)
-が運営するブログです。
+が運営するブログサービスです。
 
 当ブログでは、筆者の興味対象である
 
