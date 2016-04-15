@@ -12,7 +12,7 @@ permalink: /about/
 
 当ブログでは、筆者の興味対象である
 
-- PC
+- PC スマートフォン タブレット
 - 情報技術
 - プログラミング(HTML5, CSS3, JavaScript, Ruby, Rails, PHP, Python)
 - 写真
