@@ -5,13 +5,14 @@ permalink: /about/
 ---
 
 ## 当ブログについて
-blog.makky.ioは
-[@_Makky_](http:/example.com)
-が運営するブログです。
+
+[blog.makky.io](http://blog.makky.io)は
+[@_Makky_](https://twitter.com/_Makky_)
+が運営するブログサービスです。
 
 当ブログでは、筆者の興味対象である
 
-- PC
+- PC スマートフォン タブレット
 - 情報技術
 - プログラミング(HTML5, CSS3, JavaScript, Ruby, Rails, PHP, Python)
 - 写真
@@ -44,5 +45,7 @@ Google Analyticsについて、およびGoogle社のプライバシーポリシ�
 
 [データの保護 - アナリティクス ヘルプ](https://support.google.com/analytics/answer/6004245?hl=ja)
 
-## スタイルガイド
-[styleguide](/styleguide/)
+## 提供するコンテンツについて
+当サイトに掲載された情報に基づいて為された判断を原因として発生したいかなるトラブル・損失・損害に対しても、makky.io は責任を負いません。
+
+当サイトに掲載された全部又は一部の情報は、予告なく変更・中断することがあります。また、当サイトの運営は予告なく中止することがあります。当サイトからの情報をご利用になったこと、またはご利用になれなかったことにより生じたいかなるトラブル・損失・損害についても責任を負いませんのでご了承ください。

@@ -25,6 +25,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - Rakefile
 
 title: blog.makky.io
 

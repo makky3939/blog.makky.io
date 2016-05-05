@@ -8,27 +8,23 @@ permalink: /
   %p makky's diary
 
 .col-xs-12
-  .card-columns
-  {% for post in site.posts limit: 16 %}
-    .card
-      %img.card-img-top(src="{% if post.thumbnail %}{{ post.thumbnail }}?20160202{% else %}/assets/image/thumbnail.png?1{% endif %}" width="100%" height="auto")
-      .card-block
-        %h5.card-title
-          %a(href="{{ post.url | prepend: site.baseurl }}")
-            {{ post.title }}
-        %p
-          %small
-            %i.fa.fa-hashtag
-            {{ post.category }}
-          %small
-            %i.fa.fa-clock-o
-            {{ post.date | date: '%Y/%m/%d' }}
+  .row
+  {% for post in site.posts limit: 15 %}
+    .col-md-4.col-sm-6.col-xs-12
+      %a.card(href="{{ post.url | prepend: site.baseurl }}")
+        .card-img-top(style="background-image:url({% if post.thumbnail %}{{ post.thumbnail }}?20160202{% else %}/assets/image/thumbnail.png?1{% endif %})")
+        .card-block
+          %h5.card-title {{ post.title }}
+          .clearfix
+            %small.pull-xs-left {{ post.category | prepend: '#'}}
+            %small.pull-xs-right
+              %i.fa.fa-clock-o
+              {{ post.date | date: '%Y/%m/%d' }}
 
   {% endfor %}
 
 .col-sm-8.col-sm-offset-2.col-xs-12
-  %hr
   .text-xs-center
-    %a.btn.btn-primary-outline.btn-block(href="/archives/")
+    %a.btn.btn-primary-outline.btn-block.btn-md-margin(href="/archives/")
       %i.fa.fa-th
       More posts

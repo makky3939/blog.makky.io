@@ -17,7 +17,7 @@ module Jekyll
     end
 
     def render(context)
-      "<div class='row'><div class='col-md-12'><div class='card'><img src='#{@thumbnail}' class='card-img-top' width='100%' height='auto' /><div class='card-block text-xs-right'><a href='#{@src}' target='_blank'>#{@name}</a></div></div></div></div>"
+      "<div class='row'><div class='col-md-12'><div class='card'><div style=\"background-image:url('#{@thumbnail}')\" class='card-img-top'></div><div class='card-block text-xs-right'><a href='#{@src}' target='_blank'>#{@name}</a></div></div></div></div>"
     end
   end
 end

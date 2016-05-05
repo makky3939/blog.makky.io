@@ -3,7 +3,7 @@ layout: post
 title:  "klis向け卒業判定アプリを作った"
 date:   2015-12-07 22:18:00
 category: webapp
-thumbnail: /images/2015/12/2015-12-06 20.16.34.png
+thumbnail: /images/2015/12/2015-12-06.png
 ---
 
 この投稿は
@@ -15,7 +15,7 @@ klis向け卒業判定アプリ
 を作ったので、紹介します。
 
 ## EscapeGoat
-![Picture description](/images/2015/12/2015-12-06 20.16.34.png){: .img-thumbnail}
+![Picture description](/images/2015/12/2015-12-06.png){: .img-thumbnail}
 
 ![Picture description](/images/2015/12/2015-12-06 20.09.35.png){: .img-thumbnail}
 
