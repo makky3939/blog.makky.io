@@ -55,3 +55,5 @@ Google Analyticsについて、およびGoogle社のプライバシーポリシ�
 
 - Twitter (@_Makky_)
 - [お問い合わせフォーム](http://goo.gl/forms/yxxNTMTI1rZtDYex2){:target="_blank"}
+
+などの手段をご利用下さい。
