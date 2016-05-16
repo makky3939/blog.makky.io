@@ -33,8 +33,8 @@ permalink: /about/
 当ブログでは記事のリクエストを受け付けています。
 
 - メール
-- Twitter
-- Issue
+- [Twitter](https://twitter.com/_Makky_){:target="_blank"}
+- [GitHub Issue](https://github.com/makky3939/blog.makky.io/issues/new){:target="_blank"}
 - Pull Request
 
 などの方法でご連絡ください。
