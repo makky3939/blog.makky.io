@@ -33,8 +33,8 @@ permalink: /about/
 当ブログでは記事のリクエストを受け付けています。
 
 - メール
-- Twitter
-- Issue
+- [Twitter](https://twitter.com/_Makky_){:target="_blank"}
+- [GitHub Issue](https://github.com/makky3939/blog.makky.io/issues/new){:target="_blank"}
 - Pull Request
 
 などの方法でご連絡ください。
@@ -51,9 +51,9 @@ Google Analyticsについて、およびGoogle社のプライバシーポリシ�
 当サイトに掲載された全部又は一部の情報は、予告なく変更・中断することがあります。また、当サイトの運営は予告なく中止することがあります。当サイトからの情報をご利用になったこと、またはご利用になれなかったことにより生じたいかなるトラブル・損失・損害についても責任を負いませんのでご了承ください。
 
 ## お問い合わせ
-当サイトに関するお問い合わせは、
+当サイトに関するお問い合わせには、
 
-- Twitter (@_Makky_)
+- [Twitter](https://twitter.com/_Makky_){:target="_blank"}
 - [お問い合わせフォーム](http://goo.gl/forms/yxxNTMTI1rZtDYex2){:target="_blank"}
 
 などの手段をご利用下さい。
