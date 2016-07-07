@@ -17,9 +17,9 @@ klis向け卒業判定アプリ
 ## EscapeGoat
 ![Picture description](/images/2015/12/2015-12-06.png){: .img-thumbnail}
 
-![Picture description](/images/2015/12/2015-12-06 20.09.35.png){: .img-thumbnail}
+![Picture description](/images/2015/12/2015-12-06_2.png){: .img-thumbnail}
 
-![Picture description](/images/2015/12/2015-12-06 20.09.45.png){: .img-thumbnail}
+![Picture description](/images/2015/12/2015-12-06_3.png){: .img-thumbnail}
 
 ## 概要
 Twinsからエクスポートしたcsvファイルをこのアプリで読み込むことで、履修状況を基礎科目、専門基礎科目、専門科目のそれぞれ必修科目、選択科目、自由科目ごとに集計して、表示します。
