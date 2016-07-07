@@ -12,3 +12,13 @@ end
 desc 'create new post'
 task :post do
 end
+
+desc 'convert images'
+task :convert do
+  sh 'rm -r -f images'
+  sh 'cp -r images-src images'
+  Dir.glob('images/**/*.{png,jpg}').each do |path|
+    puts path
+    sh "mogrify -quality 70 #{path}"
+  end
+end
