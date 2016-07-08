@@ -18,7 +18,12 @@ task :convert do
   sh 'rm -r -f images'
   sh 'cp -r images-src images'
   Dir.glob('images/**/*.{png,jpg}').each do |path|
-    puts path
+    # puts path
     sh "mogrify -quality 70 #{path}"
+    if path.include? ".png"
+      sh "optipng -o6 #{path}"
+    elsif path.include? ".jpg"
+      sh "jpegoptim --strip-all #{path}"
+    end
   end
 end
