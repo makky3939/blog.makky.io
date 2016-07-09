@@ -21,7 +21,7 @@ task :convert do
     # puts path
     sh "mogrify -quality 70 #{path}"
     if path.include? ".png"
-      sh "optipng -o6 #{path}"
+      sh "optipng -o7 #{path}"
     elsif path.include? ".jpg"
       sh "jpegoptim --strip-all #{path}"
     end
