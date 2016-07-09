@@ -26,6 +26,7 @@ exclude:
   - Gemfile.lock
   - README.md
   - Rakefile
+  - images-src
 
 title: blog.makky.io
 
