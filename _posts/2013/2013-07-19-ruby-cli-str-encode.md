@@ -11,7 +11,7 @@ category: ruby
 さておき、CモジュールからRubyの授業が始まりました。
 で、演習の中に以下のコードを実行する　というものがありました。
 
-{% highlight ruby linenos %}
+{% highlight ruby %}
 # encoding:Shift_JIS
 eng = {
 "かえる" =&gt; "frog",
@@ -41,7 +41,7 @@ HashのKeyを入力して、入力した文字列を用いてvalueを出力す�
 Hashのkeyも文字列と、入力した文字列を調べてみましょう。
 先ほどのコードに、Hashの0番目のkeyと入力され文字列、それぞれのエンコードを表示させてみます。
 
-{% highlight ruby linenos %}
+{% highlight ruby %}
 # encoding:Shift_JIS
 eng = {
 "かえる" =&gt; "frog",
@@ -76,7 +76,7 @@ keyは文字化けしていますが、入力した文字列は正しく表示�
 入力した文字列のエンコードを変換しても良いのですが、出力する際に文字化けしてしまいます。
 なので、プログラム内のエンコード自体を変更することにしました。
 
-{% highlight ruby linenos %}# encoding:Windows-31J
+{% highlight ruby %}# encoding:Windows-31J
 eng = {
 "かえる" =&gt; "frog",
 "はち" =&gt; "bee",

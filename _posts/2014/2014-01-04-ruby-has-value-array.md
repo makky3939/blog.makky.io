@@ -9,7 +9,7 @@ category: ruby
 
 以下のようなケースです。
 
-{% highlight ruby linenos %}
+{% highlight ruby %}
 foo = {a: "hoge", b: Array.new(3, Array.new)}
 
 #変更前
@@ -26,7 +26,7 @@ p foo[:b].map(&:object_id)
 foo[:b][0]にpushした内容が、foo[[:b][1]、foo[[:b][2]にも代入されてしまいます。
 object_idが同じになっていることが原因なので、修正を加えます。
 
-{% highlight ruby linenos %}
+{% highlight ruby %}
 foo = {a: "hoge", b: Array.new(3).map{Array.new}}
 
 #変更前
