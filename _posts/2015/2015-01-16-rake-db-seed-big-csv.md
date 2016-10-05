@@ -8,7 +8,7 @@ category: ruby
 Railsで rake db:seedする時のお話です。
 次のようなコードで、CSVファイルからデータの読み込みができますね。
 
-{% highlight ruby linenos %}
+{% highlight ruby %}
 require 'csv'
 CSV.readlines("hoge.csv").each.with_index(1) do |row, index|
   model =  Model.new(
@@ -29,7 +29,7 @@ end
 
 以下の様なコードに変更します。
 
-{% highlight ruby linenos %}
+{% highlight ruby %}
 require 'csv'
 open("hoge.csv") do |csv|
   csv.each.with_index(1) do |line, index|
