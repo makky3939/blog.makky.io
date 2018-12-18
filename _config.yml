@@ -1,4 +1,4 @@
-timezone: RE
+timezone: Asia/Tokyo
 
 gems:
   - jekyll-sitemap
