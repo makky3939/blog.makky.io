@@ -2,7 +2,7 @@ FROM centos:centos7
 MAINTAINER makky <makky.4d6b.3f5@gmail.com>
 
 RUN rpm -ivh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
-RUN rpm -ivh https://rpmfind.net/linux/centos/7.5.1804/extras/x86_64/Packages/epel-release-7-11.noarch.rpm
+RUN rpm -ivh https://rpmfind.net/linux/centos/7.6.1810/extras/x86_64/Packages/epel-release-7-11.noarch.rpm
 
 # update epel-release
 RUN yum remove -y epel-release
