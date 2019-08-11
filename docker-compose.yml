@@ -1,4 +1,14 @@
-"web":
-  build: ./
-  ports:
-    - "3940:80"
+version: '3'
+
+services:
+  web:
+    build: ./
+    command: [nginx, '-g', 'daemon off;']
+    ports:
+      - "3940:80"
+    volumes:
+        - bundler_dir:/usr/local/bundle
+
+volumes:
+  bundler_dir:
+    driver: local
