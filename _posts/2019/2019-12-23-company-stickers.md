@@ -6,7 +6,7 @@ category: diary
 thumbnail: /images/2019/2019-12-23-1.jpg
 ---
 
-これは [klis Advent Calendar 2019](https://adventar.org/calendars/4349){:target="_blank"} 23日目の記事です。
+これは [第二のklis Advent Calendar 2019](https://adventar.org/calendars/4349){:target="_blank"} 23日目の記事です。
 
 情報系大学生 / 大学院生として活動していると、IT系企業に接触する機会が多々あります。例えば、各地で開催される勉強会やIT系カンファレンス、学会などへの参加、就職活動やインターンシップなどです。
 
