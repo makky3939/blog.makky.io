@@ -21,7 +21,7 @@ COVID-19の影響により、2020年はオリンピックをはじめとする�
 
 
 ### 18th Chopin Competition (第18回 ショパン国際ピアノコンクール)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3bMF5wS7Mr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="auto" class="iframe16-9" src="https://www.youtube.com/embed/3bMF5wS7Mr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ショパンの曲のみを扱うピアノの国際コンクールです。
 第18回は2020年に開催される予定でしたが、2021年に延期されました。
@@ -39,17 +39,17 @@ COVID-19の影響により、2020年はオリンピックをはじめとする�
 ビートボックスの世界大会です。
 2020年に予定されていた大会は2021年に延期されました。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tpJoyHP1rEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="auto" class="iframe16-9" src="https://www.youtube.com/embed/tpJoyHP1rEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 日本勢ではSo-SOという人が激アツなので一旦見てください。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XoicaHc5m4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="auto" class="iframe16-9" src="https://www.youtube.com/embed/XoicaHc5m4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## World Series of Poker, WSOP
 ポーカーの世界大会です。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yJTkGGcXGdE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="auto" class="iframe16-9" src="https://www.youtube.com/embed/yJTkGGcXGdE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 何年か前に海外旅行した時にカジノに行ったのですが、その時は何も知らなかったのでルーレットしかできませんでした。
 今度行くときはポーカーやってみたいという気持ちがあります。
@@ -58,7 +58,7 @@ COVID-19の影響により、2020年はオリンピックをはじめとする�
 ## League of Legends World Championship 2021 (Worlds2021)
 League of Legendsの世界大会
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GiZbz6C4mlM?start=2750" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="auto" class="iframe16-9" src="https://www.youtube.com/embed/GiZbz6C4mlM?start=2750" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 日本からは、日本のリージョンの優勝チームであるDetonatioN FocusMeが参加して、過去最高の成績であるベスト16の記録を残しました。
 
@@ -68,7 +68,7 @@ League of Legendsの世界大会
 ## VALORANT Champions Tour 2021
 オンラインFPSであるValorantの世界大会
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Dv7ul7V0fB8?start=32354" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="auto" class="iframe16-9" src="https://www.youtube.com/embed/Dv7ul7V0fB8?start=32354" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 日本からはCrazy Raccoonが参加しました。
 
 このゲームがなければもっと早く卒業できたんじゃないかと思います。
